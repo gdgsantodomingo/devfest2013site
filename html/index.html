@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="[Event Description]"] lang="es-DO">
+	<title>GDG DevFest [Chapter Name]</title>
+	<link rel="stylesheet" type="text/css" href="css/root.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+<body id="home">
+	<header>
+		<div class="bar_top">
+			<div class="wrap_head">
+			<h1 class="logo"><span>GDG</span> [Chapter Name] <div class="int_right"><span></span></div></h1>
+			</div>
+		</div>
+		
+		<div class="wrap_nav">
+			<nav class="primary_nav" id="nav">
+				<div class="left_nav"></div>
+				<ul>
+					<li><a href="#inicio">Home</a></li>
+					<li><a href="#schedule">Agenda</a></li>
+					<li><a href="#travel">Travel</a></li>
+					<li><a href="#sponsors">Sponsors</a></li>
+					<li><a href="#speakers">Speakers</a></li>
+				</ul>
+				<div class="right_nav"></div>
+			</nav>
+		</div>
+		
+	</header>
+	<div class="body">
+		<div class="present_portada" id="inicio">
+			<div class="wrap_body">
+			<div class="right_portada">
+				<div class="fecha">
+					<div class="dias">
+						[Event day]
+					</div>
+					<div class="mes">
+						[Month]
+					</div>
+				</div>
+				<div class="title">
+					GDG DevFest
+					<span>[Chapter Name - Year]</span>
+					<div class="line"></div>
+				</div>
+				<div class="description">
+					<p>
+						[Event Description]
+					</p>
+				</div>
+			</div>
+			<div class="left_portada">
+			</div>
+			</div>
+			<div class="registrate">
+				<div class="wap_registrate">
+					<a href="#" class="btn_rgt">Registration</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="content" id="schedule">
+			<div class="wrap_content">
+				<div class="title_setion">
+					Event Schedule
+				</div>
+				<div class="box_setion">  
+					<div class="title_calendar">First Day Schedule</div>
+					<ul>
+						<li>
+							<span>9:00 am – 10:00 am</span>: Registration.
+						</li>
+						<li>
+							<span>10:00 am</span> : General session.
+						</li>
+						<li>
+							<span>12:30 pm</span> : Lunch.
+						</li>
+						<li>
+							<span>1:30 pm – 6:30 pm</span> : Talks/Code Labs.
+						</li>
+						<li>
+							<span>7:00 pm</span> : After party if apply
+						</li>
+					</ul>
+				</div>
+				<div class="box_setion">
+					<div class="title_calendar">2 day Hackathon</div>
+					<ul>
+						<li>
+							<span>8:30 am</span> : Registration/Welcome
+						</li>
+						<li>
+							<span>9:30 am – 5:50 pm</span> : code section.
+						</li>
+						<li>
+							<span>6:00 pm</span> : Presentación de proyectos.
+						</li>
+						<li>
+							<span>6:30 pm </span>: Event Closing.
+						</li>
+						<li>
+							&nbsp;
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content" id="travel">
+			<div class="wrap_content">
+				<div class="title_setion">
+					Travel
+				</div>
+			</div>
+		</div>
+		<div class="content" id="sponsors">
+			<div class="wrap_content">
+			<div class="title_setion">
+					Sponsors
+				</div>
+			</div>
+		</div>
+		<div class="content" id="speakers">
+			<div class="wrap_content">
+				<div class="title_setion">
+					Speakers
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript">
+ $(document).ready(function(e) {
+        
+        $('#nav ul li a').bind('click', function(e) {
+            e.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top});                                                         
+        });
+    });
+</script>
+</body>
+</html>
